@@ -27,7 +27,21 @@
         <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
         <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
         
-        <script src="app/public/js/firebase.js"></script>
+        <script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyAnD3XnSVZyGWxYWIc7NaN7ufU1uHPX9ko",
+			authDomain: "autoprueba-1291c.firebaseapp.com",
+			databaseURL: "https://autoprueba-1291c.firebaseio.com",
+			projectId: "autoprueba-1291c",
+			storageBucket: "autoprueba-1291c.appspot.com",
+			messagingSenderId: "255442148005"
+		};
+
+		firebase.initializeApp(config);
+
+		var db = firebase.firestore();
+		</script>
         
         <!--<link rel="stylesheet" href="Public/css/app.css">-->
         <link rel="stylesheet" href="app/public/css/index.css">
